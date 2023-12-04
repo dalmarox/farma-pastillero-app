@@ -1,4 +1,4 @@
-import { StyleSheet, TextInput, View, Button, StyleSheet, StyleSheet } from "react-native";
+import { StyleSheet, TextInput, View, Button } from "react-native";
 import React from 'react'
 
 const CustomInput = ({
@@ -10,8 +10,7 @@ const CustomInput = ({
 }
 ) => {
   return (
-    <View style={styles.container}>
-
+<View style= {styles.container}>
        <View style={styles.inputContainer}> 
       <TextInput 
       style={styles.textInput} placeholder={placeholderProp}
@@ -22,14 +21,17 @@ const CustomInput = ({
       onPress={addItemToListEvent}
       />
       </View>
-    </View>
-  )
-}
-
-export default CustomInput
-
-const StyleSheet = StyleSheet.create({
+      </View>
+  
     
+  )
+};
+
+export default CustomInput;
+
+
+  const styles = StyleSheet.create({
+  
         inputContainer:{
           flexDirection:'row',
           justifyContent:'space-evenly'
@@ -40,15 +42,5 @@ const StyleSheet = StyleSheet.create({
         borderBottomColor: "#39393A",
         borderBottomWidth: 1,
         },
-        itemList:{
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          padding: 10,
-          margin: 10,
-          backgroundColor:'#BCEBCB',
-          borderRadius: 10,
-
-},
-}
-)
+  
+});

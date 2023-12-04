@@ -38,26 +38,14 @@ setModalVisible(!modalVisible)
 
   return (
     <>
-    {/*<View style={styles.container}>
+    <View style={styles.container}>
       <Text style={styles.mainTitle}>PASTILLERO VIRTUAL</Text>
   
-      <View style={styles.inputContainer}> 
-        <TextInput 
-        style={styles.textInput} placeholder=" Medicamento"
-        onChangeText= {onChangeTextHandler}
-        value={textItem}
-/>
-        <Button title="Agregar" color='#297373' 
-        onPress={addItemToList}
-        />
-  </View>*/}
-  <CustomInput
+    <CustomInput
    placeholderProp="Medicamento"
    textItemProp={textItem}
-   
    onChangeTextHandlerEvent={onChangeTextHandler}
    addItemToListEvent={addItemToList}
-
 />
 
       <FlatList
@@ -65,7 +53,7 @@ setModalVisible(!modalVisible)
       renderItem={renderListItem}
       keyExtractor={item=>item.id}
       />
-  
+</View>
   <CustomModal
    animationTypeProp="slide"
    isVisibleProp={modalVisible}
@@ -74,47 +62,34 @@ setModalVisible(!modalVisible)
    setModalVisibleEvent={setModalVisible}
    
   />
+
 </>
-);
+
+
+)}
+const styles= StyleSheet.create({
+container:{
+  flex:1,
+  backgroundColor:'#abedc6',
+  padding:30
+},
+mainTitle:{
+  textAlign: 'center',
+  fontSize: 30,
+  padding:10,
+  marginBottom: 20,
+  backgroundColor:'#084887',
+  borderRadius:10,
+  color:'white',
+},
+itemList: {
+  flexDirection: 'row',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  padding: 10,
+  margin: 10,
+  backgroundColor:'#BCEBCB',
+  borderRadius: 10,
+
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#EFE9F4',
-    
-    padding: 40  
-  },
-  mainTitle:{
-    fontSize: 25,
-    marginBottom: 30,
-    padding: 10,
-    textAlign: "center",
-    backgroundColor: "#090c9b", 
-    color: "white",
-    borderRadius: 10,
-
-  },
-    inputContainer:{
-      flexDirection:'row',
-      justifyContent:'space-evenly'
-    },
-    textInput:{
-    fontSize: 25,
-    width: 200,
-    borderBottomColor: "#39393A",
-    borderBottomWidth: 1,
-    },
-    itemList:{
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      padding: 10,
-      margin: 10,
-      backgroundColor:'#BCEBCB',
-      borderRadius: 10,
-
-
-    },
-   
-});
+})

@@ -22,21 +22,23 @@ const CustomModal = ({animationTypeProp, isVisibleProp, itemSelectedProp, onDele
         />
       </View>
     </Modal>
+    
   );
 };
 
 export default CustomModal;
 
 const styles = StyleSheet.create({
+  
   modalMessageContainer:{
-    marginTop: 50,
+    marginTop: 10,
     alignItems: 'center',
   },
   modalButtonContainer:{
     flexDirection:"row",
     justifyContent:"space-evenly",
-    paddingTop: 20, 
+    paddingTop: 10, 
     borderRadius: 10,
 
-  }
+  },
 });
