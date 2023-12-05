@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
   },
   textInput: {
-    fontSize: 25,
+    fontSize: 24,
     width: 200,
     borderBottomColor: "#39393A",
     borderBottomWidth: 1,

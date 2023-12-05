@@ -9,24 +9,26 @@ const CustomModal = ({
   setModalVisibleEvent,
 }) => {
   return (
+    
     <Modal animationType={animationTypeProp} visible={isVisibleProp}>
       <View style={styles.modalMessageContainer}>
         <Text>Se eliminará:</Text>
         <Text>{itemSelectedProp.value}</Text>
       </View>
       <View style={styles.modalButtonContainer}>
-        <Button
+        <Button 
           title="Cancelar"
-          color="#32965d"
+          color="#ffd60a"
           onPress={() => setModalVisibleEvent(!isVisibleProp)}
         />
         <Button
           title="Eliminar"
-          color="#941c2f"
+          color="#6a994e"
           onPress={onDeleteItemHandlerEvent}
         />
       </View>
     </Modal>
+  
   );
 };
 
@@ -34,18 +36,18 @@ export default CustomModal;
 
 const styles = StyleSheet.create({
   modalMessageContainer: {
-    marginTop: 0,
+    marginTop:10,
     padding: 20,
     alignItems: "center",
-    backgroundColor: "#abedc6",
-    fontSize: 30,
+    backgroundColor: "transparent",  
+    fontSize: 40,
        },
   modalButtonContainer: {
     flexDirection: "row",
     justifyContent: "space-evenly",
     paddingTop: 10,
     marginBottom: 0,
+    backgroundColor: "transparent",
     
-    backgroundColor: "#abedc6",
     },
 });

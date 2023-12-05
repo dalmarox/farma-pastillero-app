@@ -43,6 +43,7 @@ export default function App() {
       <Button
         title="X"
         color="#847e89"
+        
         onPress={() => onSelectItemHandler(item.id)}
       />
     </View>
