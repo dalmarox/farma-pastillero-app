@@ -11,6 +11,7 @@ const CustomModal = ({
   return (
     
     <Modal animationType={animationTypeProp} visible={isVisibleProp}>
+    <View style={styles.modalContainer}>
       <View style={styles.modalMessageContainer}>
         <Text>Se eliminará:</Text>
         <Text>{itemSelectedProp.value}</Text>
@@ -28,6 +29,7 @@ const CustomModal = ({
           onPress={onDeleteItemHandlerEvent}
         />
       </View>
+    </View>
     </Modal>
   
   );
@@ -36,9 +38,15 @@ const CustomModal = ({
 export default CustomModal;
 
 const styles = StyleSheet.create({
+  modalContainer:{
+    height: "100%",
+    backgroundColor:"#abedc6",
+  
+  },
   modalMessageContainer: {
     marginTop:10,
     padding: 20,
+    marginBottom:"20",
     alignItems: "center",
     
     fontSize: 40,
@@ -48,6 +56,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     paddingTop: 10,
     marginBottom: 0,
+    
   
         
     },

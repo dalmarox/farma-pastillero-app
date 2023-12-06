@@ -13,6 +13,7 @@ import {
 import { useState } from "react";
 import CustomModal from "./components/CustomModal";
 import CustomInput from "./components/CustomInput";
+import CustomFlatList from "./components/CustomFlatList";
 
 export default function App() {
   const [textItem, setTextItem] = useState("");
@@ -61,11 +62,9 @@ export default function App() {
           onChangeTextHandlerEvent={onChangeTextHandler}
           addItemToListEvent={addItemToList}
         />
-
-        <FlatList
-          data={itemList}
-          renderItem={renderListItem}
-          keyExtractor={(item) => item.id}
+        <CustomFlatList
+          itemList={itemList}
+          onSelectItemHandler={onSelectItemHandler}
         />
       </View>
 
@@ -94,15 +93,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     color: "white",
   },
-  itemList: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: 10,
-    margin: 10,
-    backgroundColor: "#BCEBCB",
-    borderRadius: 10,
-    borderWidth: 1,
-    
-  },
+ 
+
+
 });

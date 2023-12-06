@@ -27,13 +27,18 @@ export default CustomInput;
 const styles = StyleSheet.create({
   inputContainer: {
     flexDirection: "row",
-    justifyContent: "space-evenly",
+    justifyContent: "space-between",
+    margin:"10",
+    paddingBottom:"20",
+
   },
   textInput: {
     fontSize: 24,
     width: 200,
     borderBottomColor: "#39393A",
     borderBottomWidth: 2,
+    padding:"10",
+    Margin:"10",
     
   },
 });
