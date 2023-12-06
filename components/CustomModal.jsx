@@ -24,6 +24,7 @@ const CustomModal = ({
         <Button
           title="Eliminar"
           color="#6a994e"
+          
           onPress={onDeleteItemHandlerEvent}
         />
       </View>
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
     marginTop:10,
     padding: 20,
     alignItems: "center",
-    backgroundColor: "transparent",  
+    
     fontSize: 40,
        },
   modalButtonContainer: {
@@ -47,7 +48,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     paddingTop: 10,
     marginBottom: 0,
-    backgroundColor: "transparent",
-    
+  
+        
     },
 });

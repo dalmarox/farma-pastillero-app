@@ -1,4 +1,5 @@
 import { StatusBar } from "expo-status-bar";
+
 import {
   Button,
   StyleSheet,
@@ -7,6 +8,7 @@ import {
   TextInput,
   FlatList,
   Modal,
+  data,
 } from "react-native";
 import { useState } from "react";
 import CustomModal from "./components/CustomModal";
@@ -43,7 +45,6 @@ export default function App() {
       <Button
         title="X"
         color="#847e89"
-        
         onPress={() => onSelectItemHandler(item.id)}
       />
     </View>
@@ -67,6 +68,7 @@ export default function App() {
           keyExtractor={(item) => item.id}
         />
       </View>
+
       <CustomModal
         animationTypeProp="slide"
         isVisibleProp={modalVisible}
@@ -100,5 +102,7 @@ const styles = StyleSheet.create({
     margin: 10,
     backgroundColor: "#BCEBCB",
     borderRadius: 10,
+    borderWidth: 1,
+    
   },
 });
