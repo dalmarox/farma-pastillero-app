@@ -48,19 +48,21 @@ const styles = StyleSheet.create({
       justifyContent: 'space-between',
       alignItems: 'center',
       paddingHorizontal: 25,
+    
+      borderRadius:10,
     },
     totalPrice: {
       fontSize: 16,
       fontFamily: 'Roboto-Bold'
     },
     confirmButton:{
-      backgroundColor: colors.secondary,
+      backgroundColor:'green',
       padding:10,
       borderRadius:10,
     },
     textConfirm:{
       fontFamily:'Roboto-Bold',
-      fontSize:16,
-      color: '#fff'
+      fontSize:20,
+      color: 'black'
     }  
   })

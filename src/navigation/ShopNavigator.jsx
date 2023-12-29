@@ -20,7 +20,7 @@ const ShopNavigator = () => {
             
             >
                 <Stack.Screen 
-                    name="Categorías"
+                    name="My App        Categorias"
                     component={Categories}
                 />
                 <Stack.Screen 

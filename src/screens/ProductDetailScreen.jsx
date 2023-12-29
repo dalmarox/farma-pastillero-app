@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     imageProduct: {
       minWidth: 300,
       width: '100%',
-      height: 400,
+      height: 200,
   
     },
     imageProductLandscape: {
@@ -71,6 +71,7 @@ const styles = StyleSheet.create({
     },
     detailContainer: {
       alignItems: 'center',
+      
     },
     title: {
       fontFamily: 'Roboto-Bold',
@@ -86,7 +87,7 @@ const styles = StyleSheet.create({
       color: colors.secondary
     },
     buyButton: {
-      marginTop: 10,
+      marginTop:10,
       width: 200,
       padding: 10,
       alignItems: 'center',
